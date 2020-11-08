@@ -12,9 +12,7 @@ int main( int argc, char *argv[ ] )
     int choice;
     int playerchoice; 
     int score = 0 ;
-    //char symbol[10] = "";
     printf("Welcome to the SHELDON COOPER'S game\n");
-    printf("%c, &symbol");
     printf("\n\n");
 
     printf("As regras são:\n");
@@ -31,7 +29,7 @@ int main( int argc, char *argv[ ] )
     printf("\n\n");
 
     /* ciclo gera um numero de 1 a 5 */  
-    printf("tesoura=0, pedra=1, papel=2, spock=3, lagarto= 4\n\n");
+    printf("\nTesoura=0,\n Pedra=1,\n Papel=2,\n Spock=3,\n Lagarto= 4\n\n");
    
 
     do {
