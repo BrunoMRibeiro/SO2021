@@ -5,18 +5,13 @@
 
 #include "jogo.h"
 
-
 int main( int argc, char *argv[ ] )
 {
-
     int choice;
     int playerchoice; 
     int score = 0 ;
-    //char symbol[10] = "";
     printf("Welcome to the SHELDON COOPER'S game\n");
-    printf("%c, &symbol");
     printf("\n\n");
-
     printf("As regras são:\n");
     printf("A tesoura corta o papel\n");
     printf("O papel cobre a pedra!\n");
@@ -31,12 +26,11 @@ int main( int argc, char *argv[ ] )
     printf("\n\n");
 
     /* ciclo gera um numero de 1 a 5 */  
-    printf("tesoura=0, pedra=1, papel=2, spock=3, lagarto= 4\n\n");
+    printf("Tesoura=0,\n Pedra=1,\n Papel=2,\n spock=3,\n lagarto= 4\n\n");
    
-
     do {
         srand(time(NULL));
-        choice = rand() %5; 
+        choice = rand() %5; //gera numero aleatorio entre 0 e 4
         printf("O Sheldon Cooper já jogou! Tenta fazer melhor!\n");
         printf(">");
         scanf("%d", &playerchoice);
