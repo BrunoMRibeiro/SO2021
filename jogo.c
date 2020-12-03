@@ -15,16 +15,17 @@ void handler1 (int sig) {
 
 int main( int argc, char *argv[ ] )
 {
-
     int choice;
     int playerchoice; 
     int score = 0 ;
+<<<<<<< HEAD
     int status;
     pid_t p;
     signal(SIGUSR1, handler1);
+=======
+>>>>>>> 6da4ee53737068a058928d9f1d0ecbf5c432defc
     printf("Welcome to the SHELDON COOPER'S game\n");
     printf("\n\n");
-
     printf("As regras são:\n");
     printf("A tesoura corta o papel\n");
     printf("O papel cobre a pedra!\n");
@@ -41,10 +42,9 @@ int main( int argc, char *argv[ ] )
     /* ciclo gera um numero de 1 a 5 */  
     printf("\nTesoura=0,\n Pedra=1,\n Papel=2,\n Spock=3,\n Lagarto= 4\n\n");
    
-
     do {
         srand(time(NULL));
-        choice = rand() %5; 
+        choice = rand() %5; //gera numero aleatorio entre 0 e 4
         printf("O Sheldon Cooper já jogou! Tenta fazer melhor!\n");
         printf(">");
         scanf("%d", &playerchoice);
