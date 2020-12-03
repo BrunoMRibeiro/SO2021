@@ -1,9 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <sys/types.h>
 #include <unistd.h>
 #include <time.h>
+#include <signal.h>
+pid_t pid;
 
 #include "jogo.h"
+
+void handler1 (int sig) {   
+    
+}
 
 
 int main( int argc, char *argv[ ] )
@@ -12,6 +19,9 @@ int main( int argc, char *argv[ ] )
     int choice;
     int playerchoice; 
     int score = 0 ;
+    int status;
+    pid_t p;
+    signal(SIGUSR1, handler1);
     printf("Welcome to the SHELDON COOPER'S game\n");
     printf("\n\n");
 
